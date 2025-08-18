@@ -318,6 +318,10 @@ void password(void){
 			pass[i]=ch;
 			i++;
 		}
+		else if(ch==8 && i>0) {
+			printf("\b \b");
+			i--;
+		}
     }
 	pass[i]='\0';
 	if(strcmp(pass,passwords)==0){
